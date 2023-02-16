@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>lab1KS</title>
+  </head>
+  <body>
+    <header class="top-section">
+      <div class="wrapper">
+        <input type="file" class="file-input" />
+        <input type="text" class="symbol-input" placeholder="symbol..." />
+        <button class="calc-btn">Calculate</button>
+      </div>
+    </header>
+    <main class="main-section">
+      <div class="data-container">
+        <table class="data-table">
+          <tr>
+            <th style="width: 100px">symbol propbability</th>
+            <th style="width: 100px">entropy of text</th>
+            <th style="width: 100px">information ammount (bits)</th>
+            <th style="width: 100px">file size / information amount</th>
+            <th style="max-width: 500px">base64 encoded text</th>
+            <th style="width: 100px">base64 entropy of text</th>
+            <th style="width: 100px">base64 information ammount (bits)</th>
+          </tr>
+          <tr style="height: 60px; min-height: 60px">
+            <td class="prob_of_symb_in_text"></td>
+            <td class="text_entroy"></td>
+            <td class="text_infAmount"></td>
+            <td class="fileSize_to_InfAmount"></td>
+            <td class="base64_text"></td>
+            <td class="base64_text_entroy"></td>
+            <td class="base64_text_infAmount"></td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
